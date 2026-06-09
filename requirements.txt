@@ -2,8 +2,8 @@ numpy
 pandas
 matplotlib
 seaborn
-scikit-learn
+scikit-learn==1.7.2
 jupyter
-joblib
+joblib==1.5.3
 flask
 gunicorn
