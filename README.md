@@ -47,6 +47,12 @@ http://127.0.0.1:5000
 
 ## Despliegue en Render
 
+Aplicación desplegada:
+
+```text
+https://ml-webapp-using-flask-4geeks-project.onrender.com
+```
+
 Configuración esperada:
 
 - Root directory: `src`
