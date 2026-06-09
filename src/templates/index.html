@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de URLs spam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1>Detector de URLs spam</h1>
+            <p>Introduce una URL para comprobar si el modelo la clasifica como spam o no spam.</p>
+
+            <form method="post">
+                <label for="url">URL</label>
+                <input
+                    type="url"
+                    id="url"
+                    name="url"
+                    placeholder="https://example.com"
+                    value="{{ url }}"
+                    required
+                >
+                <button type="submit">Analizar URL</button>
+            </form>
+
+            {% if prediction %}
+                <div class="result {{ 'danger' if prediction == 'spam' else 'safe' }}">
+                    Resultado: <strong>{{ prediction }}</strong>
+                </div>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

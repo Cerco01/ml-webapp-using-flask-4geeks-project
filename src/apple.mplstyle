@@ -1,0 +1,90 @@
+# apple.mplstyle
+# Refero Apple Style - Minimal & Premium
+# Based on: https://styles.refero.design/ (Apple style reference)
+# Palette: Apple neutrals + vivid accents
+
+
+## --- FIGURE ---
+figure.facecolor:   ffffff
+figure.figsize:     10, 6
+figure.dpi:         110
+
+
+## --- AXES ---
+axes.facecolor:     ffffff
+axes.edgecolor:     cccfcf
+axes.linewidth:     0.6
+
+axes.spines.top:    False
+axes.spines.right:  False
+
+axes.axisbelow:     True
+
+
+## --- APPLE COLOR PALETTE ---
+# Primary: Vivid Blue, Ocean Blue
+# Accents: Sky Teal, Royal Violet, Sunset Orange, Flame Orange
+# Neutrals: Midnight Graphite, Cloud Mist, Slate Echo
+axes.prop_cycle: cycler('color', ['0071e3', 'ed6300', '00a1b3', 'b64400', '8668ff', '444545'])
+
+## --- GRID ---
+# Apple minimal grid - visible but not intrusive
+axes.grid:          True
+grid.color:         cccfcf
+grid.linewidth:     0.8
+grid.linestyle:     -
+grid.alpha:         0.6
+
+
+## --- TEXT ---
+# SF Pro Display (instalada localmente) -> SF Pro Text -> system-ui -> generic sans-serif
+font.family:        sans-serif
+font.sans-serif:    SF Pro Display, SF Pro Text, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
+font.size:          12
+axes.titlesize:     16
+axes.titleweight:   600
+axes.labelsize:     12
+axes.labelcolor:    1d1d1f
+text.color:         1d1d1f
+xtick.color:        6b6c6c
+ytick.color:        6b6c6c
+
+
+## --- LEGEND ---
+legend.framealpha:  0.95
+legend.facecolor:   ffffff
+legend.edgecolor:   e8e8ed
+legend.fontsize:    10
+legend.loc:         best
+
+
+## --- LINES & MARKERS ---
+lines.linewidth:    2.0
+lines.markersize:   6
+lines.markeredgewidth: 1.5
+lines.markeredgecolor: ffffff
+
+
+## --- PATCHES (BARS, AREAS) ---
+patch.linewidth:    0.8
+patch.edgecolor:    ffffff
+
+
+## --- TICKS ---
+xtick.direction:    out
+ytick.direction:    out
+xtick.major.size:   4
+ytick.major.size:   4
+xtick.minor.size:   2
+ytick.minor.size:   2
+xtick.major.width:  0.6
+ytick.major.width:  0.6
+
+
+## --- SCATTER ---
+# Note: seaborn manages scatter edgecolors internally; avoid overriding
+# scatter.edgecolors: ffffff
+
+
+## --- HIST / BAR ---
+hist.bins:          auto

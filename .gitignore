@@ -1,0 +1,7 @@
+__pycache__
+.env
+.learn
+.vscode
+.ipynb_checkpoints
+
+theory/
