@@ -25,6 +25,12 @@
                 <button type="submit">Analizar URL</button>
             </form>
 
+            {% if error_message %}
+                <div class="result error">
+                    {{ error_message }}
+                </div>
+            {% endif %}
+
             {% if prediction %}
                 <div class="result {{ 'danger' if prediction == 'spam' else 'safe' }}">
                     Resultado: <strong>{{ prediction }}</strong>
